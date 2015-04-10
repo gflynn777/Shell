@@ -1,9 +1,3 @@
-/*
-Assignment 5 - CS416
-Professor Krzyzanowski
-Jonathan Chang and Greg Flynn
-*/
-//
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
