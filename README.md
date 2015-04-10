@@ -24,5 +24,8 @@ will pipe the following commands in a separate process for each command:
 
 8.  sed 10q  tells the stream editor to quit after reading ten lines. The user will see the top ten lines of the output of sort -nr. 
 
+#Usage
+The included makefile will compile the program with the gcc compiler. The program must be run on a platorm that uses the Unix kernel (i.e. it won't work in Windows).
+
 
 
