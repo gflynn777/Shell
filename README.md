@@ -6,7 +6,7 @@ The shell program supports piping an arbitrarily long list of piped commands. To
 
 cat moby.txt |tr A-Z a-z|tr -C a-z '\n' |sed  '/^$/d' |sort|uniq -c|sort -nr|sed 10q
 
-will do the following:
+will pipe the following commands in a separate process for each command:
 
 1. cat moby.txt puts the contents of the file moby.txt onto the standard output stream. 
 
@@ -23,4 +23,6 @@ will do the following:
 7. sort -nr sorts the output of uniq by the count of duplicate lines. The sorting is in inverse numeric order (-nr). The output from this is a frequency-ordered list of unique words. 
 
 8.  sed 10q  tells the stream editor to quit after reading ten lines. The user will see the top ten lines of the output of sort -nr. 
+
+
 
